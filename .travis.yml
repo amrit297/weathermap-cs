@@ -20,8 +20,7 @@ addons:
     packages:
       - g++-4.8
   chrome: stable
-before_install:
-        s# start your web application and listen on `localhost`
+before_install:        
         - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
 branches:
   only:
