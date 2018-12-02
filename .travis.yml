@@ -8,8 +8,6 @@ notifications:
   email: false
 
 node_js:
-  - '6'
-  - '7'
   - '8'
 
 env:
@@ -29,7 +27,7 @@ branches:
     - master
     - /^greenkeeper/.*$/
 
-script: "yarn run test"
+script: "yarn run wdio"
 
 after_success:
   
