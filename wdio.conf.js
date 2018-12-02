@@ -46,7 +46,12 @@ exports.config = {
         // make sure that not more than 5 instance gets started at a time.
         maxInstances: 5,
         //
-        browserName: 'chrome'
+        browserName: 'chrome',
+        chromeOptions: {
+
+            args: ['headless', 'disable-gpu'],
+    
+          }
     }],
     //
     // ===================
